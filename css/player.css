@@ -1,0 +1,19 @@
+body { background: #235; margin: 0; padding: 0; }
+.player { width: 100%; color: #fff; text-align: center; height: calc(100vh - 50px); }
+.logo { padding-top: 25vh; display: none; text-align: center; font-size: 60px; font-weight: bold; user-select: none; color: transparent; background: linear-gradient(340deg, rgb(75, 161, 252) 3.44%, rgb(236, 42, 237) 100%); -webkit-background-clip: text; }
+.form-control { padding: 10px 15px; margin: 0 auto; display: -webkit-flex; display: flex; box-sizing: border-box; width: 100%; transition: width 0.5s ease-in-out; }
+.form-control input { height: 30px; margin: 0; padding: 0; border: none; }
+.form-control input:focus { outline: 3px solid rgba(0, 123, 255, 0.3); }
+.form-control .url { background: #347; color: #9bd; border-radius: 5px 0 0 5px; padding: 0 10px; flex: 1; overflow: hidden; text-overflow: ellipsis; }
+.form-control .play { background: #123 url('../images/play.png') center no-repeat; background-size: 24px; width: 40px; border-radius: 0 5px 5px 0; cursor: pointer; }
+.form-control .play:hover { background-color: #012 }
+.ready .logo { display: block; }
+.ready .player { display: none; }
+.ready .form-control { width: 60%; padding-top: 5vh; }
+.ready .form-control input{ height: 50px; }
+.ready .form-control .play{ width: 50px; background-size: 36px; }
+
+@media screen and (max-width: 640px) { 
+	.logo { font-size: 30px; }
+	.ready .form-control { width: 90%; padding-top: 5vh; }
+} 
